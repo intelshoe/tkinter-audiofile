@@ -1,4 +1,8 @@
 import tkinter as tk
+import speech_recognition as sr
+import time
+from os import path
+from talk import Talk
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -6,10 +10,11 @@ class Application(tk.Frame):
         self.master = master
         self.pack()
         self.create_widgets()
+        self.r = Talk()
 
     def create_widgets(self):
         self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Hello World\n(click me)"
+        self.hi_there["text"] = "Click me to record speach to text!"
         self.hi_there["command"] = self.say_hi
         self.hi_there.pack(side="top")
 
@@ -18,4 +23,4 @@ class Application(tk.Frame):
         self.quit.pack(side="bottom")
 
     def say_hi(self):
-        print("hi there, everyone!")
+        print(self.r.record(5, "testing"))

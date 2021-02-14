@@ -3,11 +3,6 @@
 Main app entry point.
 
 '''
-import speech_recognition as sr
-import time
-from os import path
-from talk import Talk
-
 import tkinter as tk
 from window import Application
 
