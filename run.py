@@ -3,7 +3,6 @@
 Main app entry point.
 
 '''
-from talk import Talk
 
 import tkinter as tk
 from window import Application
