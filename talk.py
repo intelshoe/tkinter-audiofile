@@ -1,5 +1,6 @@
 '''
-Main interface to features.
+This will record audio and save to a wav file.
+Then it return the translation of the audio to text.
 
 '''
 import speech_recognition as sr
