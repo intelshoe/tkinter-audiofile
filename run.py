@@ -8,13 +8,9 @@ import time
 from os import path
 from talk import Talk
 
-def main():
-    # start the talking feature
-    talkBot = Talk()
+import tkinter as tk
+from window import Application
 
-    # records for 5 seconds, saves to wav file and returns the text
-    print(talkBot.record(5, "testing"))
-
-
-# runs the whole program
-main()
+root = tk.Tk()
+app = Application(master=root)
+app.mainloop()
