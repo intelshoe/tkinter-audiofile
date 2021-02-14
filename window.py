@@ -14,7 +14,7 @@ class Application(tk.Frame):
 
     def create_widgets(self):
         self.hi_there = tk.Button(self)
-        self.hi_there["text"] = "Click me to record speach to text!"
+        self.hi_there["text"] = "Click me to record speech to text!"
         self.hi_there["command"] = self.say_hi
         self.hi_there.pack(side="top")
 
