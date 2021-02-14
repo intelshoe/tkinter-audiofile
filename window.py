@@ -20,8 +20,7 @@ class Application(tk.Frame):
         self.hi_there = tk.Button(self)
         self.hi_there["text"] = "Click me to record speech to text!"
         self.hi_there["command"] = self.say_hi
-        self.hi_there.pack(side="bottom")
-        self.hi_there.place(height='100', width='200')
+        self.hi_there.place(height="100", width="100")
         self.quit = tk.Button(self, text="QUIT", fg="red",
                               command=self.master.destroy)
         self.quit.pack(side="bottom")
