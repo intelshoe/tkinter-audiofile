@@ -1,3 +1,7 @@
+'''
+This loads the tkinter application window
+
+'''
 import tkinter as tk
 import speech_recognition as sr
 import time
