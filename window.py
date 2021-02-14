@@ -1,3 +1,7 @@
+'''
+This loads the tkinter application window
+
+'''
 import tkinter as tk
 
 class Application(tk.Frame):
