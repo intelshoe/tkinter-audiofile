@@ -1,2 +1,4 @@
 # tkinter-audiofile
-Cool chat/phone call app
+
+Chatting and phone call app
+
